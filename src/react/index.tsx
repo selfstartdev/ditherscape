@@ -52,6 +52,8 @@ export interface DitherscapeProps {
 }
 
 const DEFAULT_INITIAL_SIZE = { width: 1440, height: 900 };
+/** Just under iOS Safari's canvas limit (4096 × 4096). */
+const MAX_CANVAS_PIXELS = 16_000_000;
 
 interface Size {
   width: number;
@@ -170,7 +172,8 @@ export function Ditherscape({
     const el = ref.current;
     if (!canvas || !el || !final || !measured) return;
     const frame = requestAnimationFrame(() => {
-      const dpr = Math.min(3, window.devicePixelRatio || 1);
+      // iOS Safari won't draw a canvas over 16.7M pixels: lower the resolution for very large layers.
+      const dpr = Math.min(3, window.devicePixelRatio || 1, Math.sqrt(MAX_CANVAS_PIXELS / (measured.width * measured.height)));
       const w = Math.round(measured.width * dpr);
       const h = Math.round(measured.height * dpr);
       if (canvas.width !== w) canvas.width = w;
