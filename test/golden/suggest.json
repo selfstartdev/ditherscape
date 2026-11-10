@@ -1,0 +1,307 @@
+{
+  "halftone": [
+    {
+      "tone": {
+        "radial": {
+          "center": "40% 30%",
+          "stops": [
+            0.05,
+            0.8
+          ]
+        }
+      },
+      "ink": "#33b894",
+      "paper": "#1d2640",
+      "method": "halftone",
+      "shape": "circle",
+      "cell": 7,
+      "angle": 0
+    },
+    {
+      "tone": {
+        "radial": {
+          "center": "30% 30%",
+          "stops": [
+            0.8,
+            0
+          ]
+        }
+      },
+      "ink": "#5b3cc4",
+      "paper": "#f3efff",
+      "method": "halftone",
+      "shape": "circle",
+      "cell": 10,
+      "angle": 45
+    },
+    {
+      "tone": {
+        "linear": {
+          "angle": 240,
+          "stops": [
+            0,
+            0.9
+          ]
+        }
+      },
+      "ink": "#0b3d2e",
+      "paper": "#e9f2e4",
+      "method": "halftone",
+      "shape": "circle",
+      "cell": 7,
+      "angle": 45
+    }
+  ],
+  "dither": [
+    {
+      "tone": {
+        "linear": {
+          "angle": 195,
+          "stops": [
+            0.1,
+            0.9
+          ]
+        }
+      },
+      "ink": "#1d2640",
+      "paper": "#fbf6ea",
+      "method": "floyd-steinberg",
+      "shape": "square",
+      "cell": 2
+    },
+    {
+      "tone": {
+        "linear": {
+          "angle": 150,
+          "stops": [
+            0.1,
+            0.8
+          ]
+        }
+      },
+      "ink": "#2b2118",
+      "paper": "#f2e6cf",
+      "method": "atkinson",
+      "shape": "square",
+      "cell": 2
+    },
+    {
+      "tone": {
+        "linear": {
+          "angle": 45,
+          "stops": [
+            0.05,
+            0.75
+          ]
+        }
+      },
+      "ink": "#f0a646",
+      "paper": "#1d2640",
+      "method": "bayer",
+      "shape": "square",
+      "cell": 3,
+      "matrix": 4
+    }
+  ],
+  "shapes": [
+    {
+      "tone": {
+        "radial": {
+          "center": "65% 35%",
+          "stops": [
+            0,
+            0.9500000000000001
+          ]
+        }
+      },
+      "ink": "#f6d79a",
+      "paper": "#2d1e2f",
+      "method": "halftone",
+      "shape": "cross",
+      "cell": 16,
+      "angle": 0
+    },
+    {
+      "tone": {
+        "noise": {
+          "scale": 160,
+          "detail": 2,
+          "range": [
+            0.05,
+            0.9
+          ]
+        }
+      },
+      "ink": "#5b3cc4",
+      "paper": "#f3efff",
+      "method": "halftone",
+      "shape": "diamond",
+      "cell": 23,
+      "angle": 45
+    },
+    {
+      "tone": {
+        "radial": {
+          "center": "80% 50%",
+          "stops": [
+            0.8500000000000001,
+            0.1
+          ]
+        }
+      },
+      "ink": "#e0577f",
+      "paper": "#fffdf9",
+      "method": "halftone",
+      "shape": "diamond",
+      "cell": 22,
+      "angle": 45
+    }
+  ],
+  "grain": [
+    {
+      "tone": {
+        "radial": {
+          "center": "40% 25%",
+          "stops": [
+            0.8,
+            0.05
+          ]
+        }
+      },
+      "ink": "#111111",
+      "paper": "#ffffff",
+      "method": "blue-noise",
+      "shape": "circle",
+      "cell": 3,
+      "size": 0.7000000000000001,
+      "jitter": 0.35000000000000003,
+      "seed": 930
+    },
+    {
+      "tone": {
+        "radial": {
+          "center": "25% 55%",
+          "stops": [
+            0.8,
+            0.1
+          ]
+        }
+      },
+      "ink": "#f6d79a",
+      "paper": "#2d1e2f",
+      "method": "blue-noise",
+      "shape": "circle",
+      "cell": 5,
+      "size": 0.9,
+      "jitter": 0.5,
+      "seed": 673
+    },
+    {
+      "tone": {
+        "radial": {
+          "center": "65% 60%",
+          "stops": [
+            0,
+            0.8500000000000001
+          ]
+        }
+      },
+      "ink": "#2b2118",
+      "paper": "#f2e6cf",
+      "method": "blue-noise",
+      "shape": "circle",
+      "cell": 5,
+      "size": 0.8500000000000001,
+      "jitter": 0.4,
+      "seed": 255
+    }
+  ],
+  "any": [
+    {
+      "tone": {
+        "radial": {
+          "center": "80% 50%",
+          "stops": [
+            0.9500000000000001,
+            0.1
+          ]
+        }
+      },
+      "ink": "#2b2118",
+      "paper": "#f2e6cf",
+      "method": "halftone",
+      "shape": "square",
+      "cell": 22,
+      "angle": 0
+    },
+    {
+      "tone": {
+        "noise": {
+          "scale": 380,
+          "detail": 2,
+          "range": [
+            0.15000000000000002,
+            0.75
+          ]
+        }
+      },
+      "ink": "#e0577f",
+      "paper": "#fffdf9",
+      "method": "halftone",
+      "shape": "circle",
+      "cell": 12,
+      "angle": 75
+    },
+    {
+      "tone": {
+        "radial": {
+          "center": "35% 45%",
+          "stops": [
+            0.1,
+            0.9500000000000001
+          ]
+        }
+      },
+      "ink": "#0b3d2e",
+      "paper": "#e9f2e4",
+      "method": "floyd-steinberg",
+      "shape": "square",
+      "cell": 2
+    },
+    {
+      "tone": {
+        "noise": {
+          "scale": 340,
+          "detail": 5,
+          "range": [
+            0.05,
+            0.8500000000000001
+          ]
+        }
+      },
+      "ink": "#f0a646",
+      "paper": "#1d2640",
+      "method": "halftone",
+      "shape": "circle",
+      "cell": 6,
+      "angle": 45
+    },
+    {
+      "tone": {
+        "linear": {
+          "angle": 15,
+          "stops": [
+            0.05,
+            0.8500000000000001
+          ]
+        }
+      },
+      "ink": "#f6d79a",
+      "paper": "#2d1e2f",
+      "method": "halftone",
+      "shape": "circle",
+      "cell": 9,
+      "angle": 45
+    }
+  ]
+}
